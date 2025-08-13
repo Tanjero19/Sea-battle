@@ -1,0 +1,14 @@
+:root{--bg:#0b132b;--cell:#1c2541;--ship:#3a506b;--miss:#5bc0be;--hit:#ff6b6b}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,Arial;background:#0e1526;color:#fff;display:grid;gap:12px;place-items:center;padding:16px}
+h1{margin:8px 0 0}
+.boards{display:flex;gap:20px;flex-wrap:wrap;justify-content:center}
+.board{display:grid;grid-template-columns:repeat(10,32px);grid-auto-rows:32px;gap:3px;background:var(--bg);padding:6px;border-radius:8px}
+.cell{width:32px;height:32px;background:var(--cell);border-radius:4px;display:grid;place-items:center;font-size:14px;user-select:none}
+.click .cell{cursor:pointer}
+.cell.ship{background:var(--ship)}
+.cell.miss{background:var(--miss)}
+.cell.hit{background:var(--hit)}
+.panel{display:flex;gap:12px;align-items:center}
+button{padding:8px 12px;border:0;border-radius:6px;background:#2d7eff;color:#fff;font-weight:600;cursor:pointer}
+button:hover{filter:brightness(1.05)}
