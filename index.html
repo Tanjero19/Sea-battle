@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Морской бой</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Морской бой</h1>
+<div class="boards">
+  <section><h2>Вы</h2><div id="player" class="board"></div></section>
+  <section><h2>Противник</h2><div id="enemy" class="board"></div></section>
+</div>
+<div class="panel">
+  <button id="new">Новая игра</button>
+  <button id="rotate">Повернуть (R)</button>
+  <button id="ready" disabled>Готово</button>
+  <span id="msg">Расставьте корабли</span>
+</div>
+<script src="game.js"></script>
+</body>
+</html>
